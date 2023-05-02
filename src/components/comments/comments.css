@@ -1,0 +1,271 @@
+#comment-section {
+  width: 32em;
+  height: 40em;
+  background-color: #fff;
+  position: relative;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3em;
+}
+
+#comments-box {
+  height: auto;
+  width: 95%;
+  max-height: 32.5em;
+  overflow-y: scroll;
+  padding: 0px 0.7rem;
+  padding-bottom: 1em;
+}
+
+#comments-box::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent !important;
+}
+
+#comments-box:hover::-webkit-scrollbar-thumb {
+  background-color: #d4d4d4;
+  border-radius: 10px;
+}
+
+#custom-comment-form {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 5em;
+}
+
+#custom-comment-form input[type="text"] {
+  border: 1px solid #b3b1b1;
+  border-radius: 5px;
+  padding: 10px;
+  outline: transparent;
+  font-size: 18px;
+  width: 80%;
+  font-weight: 300;
+  height: 85%;
+}
+
+::placeholder {
+  font-weight: 300;
+  color: #000;
+}
+
+#custom-comment-form input:focus {
+  border: 1px solid transparent;
+}
+
+#custom-comment-form button {
+  height: 85%;
+  background-color: rgb(11, 150, 250);
+  width: 3.5em;
+  color: #fff;
+  border-radius: 5px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+#custom-comment-form button i {
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+#custom-comment {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1em;
+}
+
+#profile-image-container {
+  position: relative;
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+#profile-image-container img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  border-radius: 50%;
+}
+
+#content-box {
+  width: calc(100% - 4.5em);
+  height: auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#content-box #admin-tag{
+    bottom: 5px;
+    right: 15px;
+}
+
+
+#content-box #admin-tag h6{
+ font-size: .9rem;
+}
+
+#project-comment {
+  background-color: #eaeef2;
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  position: relative;
+}
+
+#timestamp {
+  font-weight: 350;
+  margin-bottom: 0.3em;
+  font-size: 0.9rem;
+}
+
+#comment-content {
+  font-weight: 350;
+  color: #666;
+}
+
+#view-more {
+  display: flex;
+  margin-top: 1em;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 5px;
+  color: rgb(0, 145, 255);
+  cursor: pointer;
+  width: 10em;
+}
+
+#view-more h6 {
+  font-weight: 350;
+  pointer-events: none;
+}
+
+#view-more i {
+  pointer-events: none;
+}
+
+#reply-box {
+  width: 99%;
+  align-self: flex-end;
+  margin-top: 0.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#reply-box #custom-comment {
+  width: 105%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.reply-box-active {
+  height: auto;
+}
+
+.reply-box-inactive {
+  height: 0;
+  overflow: hidden;
+}
+
+#comment-details {
+  width: 100%;
+  height: 2.5em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+#comment-details div {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+#comment-details div h6 {
+  font-size: 0.9rem;
+  color: #556169;
+  font-weight: 400;
+}
+
+#comment-details div i {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#reply-input-box {
+  width: 100%;
+  height: 6em;
+  /* background-color: #666; */
+  border: 1px solid #c5c4c4;
+  margin-top: 1em;
+  border-radius: 10px;
+  position: relative;
+}
+
+#reply-input-box textarea {
+  border: none;
+  width: 100%;
+  resize: none;
+  height: 70%;
+  font-weight: 350;
+  border-radius: 15px;
+  outline: none;
+}
+
+textarea:focus {
+  border: 1px solid red;
+  box-shadow: none !important;
+}
+
+#reply-controls {
+  width: 100%;
+  height: 2em;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#reply-controls button {
+  font-size: 15px;
+  border-radius: 5px;
+  display: flex;
+  margin-right: 0.6em;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+}
+
+#cancel-btn {
+}
+
+#reply-btn {
+}
+
+#admin-tag {
+  position: absolute;
+  right: 5px;
+}
+
+#admin-tag h6 {
+  color: orange !important;
+}

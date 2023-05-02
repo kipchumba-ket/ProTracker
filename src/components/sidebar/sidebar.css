@@ -1,0 +1,22 @@
+#cohorts-list{
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+    
+    display: flex;
+    align-items: flex-start;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#cohorts-list h6{
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#cohorts-list h6:hover{
+    color: rgb(54, 54, 240);
+}
