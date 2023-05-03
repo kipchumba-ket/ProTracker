@@ -576,7 +576,7 @@ function UserProjectList() {
               ></textarea>
             </div>
             <div className="form-group">
-              <label>Gihub link</label>
+              <label>Github link</label>
               <input
                 onChange={(e) => {
                   setGithubLink(e.target.value);
