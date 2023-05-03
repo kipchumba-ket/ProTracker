@@ -576,7 +576,7 @@ function UserProjectList() {
               ></textarea>
             </div>
             <div className="form-group">
-              <label>Gihub link</label>
+              <label>Github link</label>
               <input
                 onChange={(e) => {
                   setGithubLink(e.target.value);
@@ -708,9 +708,9 @@ function UserProjectList() {
                     }}
                     type="checkbox"
                     className="tag-checkbox"
-                    value="ruby"
+                    value="vue"
                   ></input>
-                  <h6>Ruby</h6>
+                  <h6>Vue</h6>
                 </div>
               </div>
             </div>
