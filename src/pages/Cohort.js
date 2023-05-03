@@ -4,7 +4,7 @@ function CohortForm({cohortData,setCohortData,handleSubmit,handleInputChange}) {
   const [selectedMember, setSelectedMember] = useState('');
   useEffect(() => {
     // Fetch members for the dropdown
-    fetch(`http://localhost:3000/cohort/cohort_members`, {
+    fetch(`https://protracker-5hxf.onrender.com/cohort/cohort_members`, {
       headers: { 'Authorization': 'Bearer ' + localStorage.getItem('token') }
     })
       .then(response => response.json())
@@ -31,7 +31,7 @@ function CohortForm({cohortData,setCohortData,handleSubmit,handleInputChange}) {
   // }
   function handleMemberAdd(event) {
     event.preventDefault();
-    fetch(`http://localhost:3000/cohort/members`, {
+    fetch(`https://protracker-5hxf.onrender.com/cohort/members`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -44,7 +44,7 @@ function CohortForm({cohortData,setCohortData,handleSubmit,handleInputChange}) {
       .catch(error => console.log(error));
   }
   function handleMemberDismiss(memberId) {
-    fetch(`http://localhost:3000/members/${memberId}`, {
+    fetch(`https://protracker-5hxf.onrender.com/members/${memberId}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',

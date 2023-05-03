@@ -19,7 +19,7 @@ function ProjectsList() {
     const [projects, setProjects] = useState([])
 
     useEffect(()=>{
-        fetch("http://localhost:3000/cohort/1/all_projects",{
+        fetch("https://protracker-5hxf.onrender.com/cohort/1/all_projects",{
             headers: {
                 "Content-Type": 'application/json',
                 'Authorization': 'Bearer ' + token
