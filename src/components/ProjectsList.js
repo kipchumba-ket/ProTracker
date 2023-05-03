@@ -19,7 +19,7 @@ function ProjectsList() {
     const [projects, setProjects] = useState([])
 
     useEffect(()=>{
-        fetch("https://protracker-5hxf.onrender.com/cohort/1/all_projects",{
+        fetch("http://localhost:3000/cohort/1/all_projects",{
             headers: {
                 "Content-Type": 'application/json',
                 'Authorization': 'Bearer ' + token
@@ -74,7 +74,7 @@ function ProjectsList() {
 
 <div>
       
-      <section class="bg-gray-50 dark:bg-gray-900 p-3 sm:p-5">
+      <section class="rounded bg-gray-50 dark:bg-gray-900 p-3 sm:p-5">
     <div class="mx-auto max-w-screen-xl px-4 lg:px-12">
         
         <div class="bg-white dark:bg-gray-800 relative shadow-md sm:rounded-lg overflow-hidden">

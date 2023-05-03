@@ -51,10 +51,13 @@ function CohortList() {
       });
   }, []);
 
+
   // store cohort id inlocalStorage;
   let handleCohortId = (value) => {
     localStorage.setItem("cohort_id", value);
   };
+
+  
 
   let cohortlist = cohorts.map((cohort) => {
     return (
@@ -240,7 +243,7 @@ function CohortList() {
       <div id="cohort-header">
         <div id="coohort-path">
           <div id="path-col">
-            <h6>Cohort > </h6>
+            <h6>Cohort &gt; </h6>
             <h2>All Cohorts</h2>
           </div>
         </div>
