@@ -19,6 +19,7 @@ import bootstrap from "./assets/bootstrap.png";
 import rails from "./assets/rails.png";
 import css from "./assets/css3.png";
 import tailwind from "./assets/tailwind-css.png";
+import vue from "./assets/vue.png";
 
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 
@@ -113,6 +114,7 @@ function Projectdetails() {
     css: css,
     tailwind: tailwind,
     react: react,
+    vue: vue,
   };
 
   let imageArray;
