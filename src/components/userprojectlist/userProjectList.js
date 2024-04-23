@@ -44,7 +44,7 @@ function UserProjectList() {
 
   useEffect(() => {
     fetch(
-      `https://protracker-5hxf.onrender.com/cohort/${cohort_id}/all_projects`,
+      `http://localhost:3000/cohort/${cohort_id}/all_projects`,
       {
         headers: {
           "Content-Type": "application/json",
@@ -75,7 +75,7 @@ function UserProjectList() {
       event.target.style.color = "blueViolet !important";
       h6Elem.innerHTML = "";
       h6Elem.innerHTML = likes + 1;
-      fetch(`https://protracker-5hxf.onrender.com/projects/${id}/like`, {
+      fetch(`http://localhost:3000/projects/${id}/like`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -92,7 +92,7 @@ function UserProjectList() {
       event.target.style.color = "black !important";
       h6Elem.innerHTML = "";
       h6Elem.innerHTML = likes - 1;
-      fetch(`https://protracker-5hxf.onrender.com/projects/${id}/dislike`, {
+      fetch(`http://localhost:3000/projects/${id}/unlike`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -425,7 +425,7 @@ function UserProjectList() {
       github_link: githubLink,
       tags: tags,
     };
-    fetch("https://protracker-5hxf.onrender.com/projects/add_project", {
+    fetch("http://localhost:3000/projects/add_project", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

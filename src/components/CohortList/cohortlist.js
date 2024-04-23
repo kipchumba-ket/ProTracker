@@ -38,7 +38,7 @@ function CohortList() {
   // Retrieving cohorts from database;
   const [cohorts, setCohorts] = useState([]);
   useEffect(() => {
-    fetch("https://protracker-5hxf.onrender.com/cohorts/my_cohorts", {
+    fetch("http://localhost:3000/cohorts/my_cohorts", {
       headers: {
         "Content-Type": "application/json",
         Authorization: "Bearer " + token,
@@ -94,7 +94,7 @@ function CohortList() {
   const [allUsersSearch, setallUsersSearch] = useState([]);
 
   useEffect(() => {
-    fetch("https://protracker-5hxf.onrender.com/all_users", {
+    fetch("http://localhost:3000/all_users", {
       headers: {
         "Content-Type": "application/json",
         Authorization: "Bearer " + token,
@@ -112,7 +112,7 @@ function CohortList() {
       cohort_id: clickedCohortId,
       user_id: id,
     };
-    fetch("https://protracker-5hxf.onrender.com/cohort/add_student", {
+    fetch("http://localhost:3000/cohort/add_student", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -206,7 +206,7 @@ function CohortList() {
 
   function handleSubmit() {
     setLoading(true);
-    fetch(`https://protracker-5hxf.onrender.com/cohorts/create_cohort`, {
+    fetch(`http://localhost:3000/cohorts/create_cohort`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

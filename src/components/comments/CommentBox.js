@@ -59,7 +59,7 @@ const Comment = ({ comment, replies, formatTimestamp, avatar_url,handleToast }) 
       message: replyContent,
     };
 
-    fetch("https://protracker-5hxf.onrender.com/comments/reply", {
+    fetch("http://localhost:3000/comments/reply", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -239,7 +239,7 @@ const CommentForm = ({ formatTimestamp, avatar_url }) => {
       user_id: userId,
     };
 
-    fetch("https://protracker-5hxf.onrender.com/comments/comment", {
+    fetch("http://localhost:3000/comments/comment", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -352,7 +352,7 @@ function CommentBox() {
 
   useEffect(() => {
     fetch(
-      `https://protracker-5hxf.onrender.com/comments/project_comments/${project_id}`
+      `http://localhost:3000/comments/project_comments/${project_id}`
     )
       .then((response) => response.json())
       .then((data) => {
@@ -363,7 +363,7 @@ function CommentBox() {
   const [avatar_url, setAvatarUrl] = useState(null);
 
   useEffect(() => {
-    fetch("https://protracker-5hxf.onrender.com/user_profile", {
+    fetch("http://localhost:3000/user_profile", {
       headers: {
         "Content-Type": "application/json",
         Authorization: "Bearer " + token,

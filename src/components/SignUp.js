@@ -40,7 +40,7 @@ const SignUp = () => {
 
     if (password === confirmPassword) {
       setIsLoading(true)
-      fetch("https://protracker-5hxf.onrender.com/signup", {
+      fetch("http://localhost:3000/signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(userObj),

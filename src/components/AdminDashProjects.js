@@ -7,7 +7,7 @@ function AdminDashProjects() {
   const [projectsSearch, setProjectsSearch] = useState([]);
 
   useEffect(() => {
-    fetch(`https://protracker-5hxf.onrender.com/all_projects`, {
+    fetch(`http://localhost:3000/all_projects`, {
       headers: {
         "Content-Type": "application/json",
         Authorization: "Bearer " + token,

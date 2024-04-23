@@ -66,7 +66,7 @@ function UserBio() {
   const [achievements, setAchievements] = useState([]);
 
   useEffect(() => {
-    fetch("https://protracker-5hxf.onrender.com/user_profile", {
+    fetch("http://localhost:3000/user_profile", {
       headers: {
         "Content-Type": "application/json",
         Authorization: "Bearer " + token,
@@ -211,7 +211,7 @@ function UserBio() {
       setIsLoading(false)
       return;
     }
-    fetch("https://protracker-5hxf.onrender.com/update_profile", {
+    fetch("http://localhost:3000/update_profile", {
       method: "PUT",
       headers: {
         "content-type": "application/json",
@@ -254,7 +254,7 @@ function UserBio() {
     };
     loader.classList.remove("avatar-inactive");
     loader.classList.add("avatar-active");
-    fetch("https://protracker-5hxf.onrender.com/update_avatar", {
+    fetch("http://localhost:3000/update_avatar", {
       method: "PUT",
       headers: {
         "content-type": "application/json",

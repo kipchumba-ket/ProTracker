@@ -34,7 +34,7 @@ function AdminDashUsers() {
   const [allUsersSearch, setallUsersSearch] = useState([]);
 
   useEffect(() => {
-    fetch("https://protracker-5hxf.onrender.com/all_users", {
+    fetch("http://localhost:3000/all_users", {
       headers: {
         "Content-Type": "application/json",
         Authorization: "Bearer " + token,
@@ -56,7 +56,7 @@ function AdminDashUsers() {
   // Granting a user admin rights;
   let handleMakingAdmin = () => {
     let userObj = { user_id: userActionId };
-    fetch("https://protracker-5hxf.onrender.com/make_admin", {
+    fetch("http://localhost:3000/make_admin", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -82,7 +82,7 @@ function AdminDashUsers() {
   // revoking admin rights;
   let handleRevokingAdminStatus = () => {
     let userObj = { user_id: userActionId };
-    fetch("https://protracker-5hxf.onrender.com/remove_admin", {
+    fetch("http://localhost:3000/remove_admin", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

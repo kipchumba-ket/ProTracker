@@ -7,7 +7,7 @@ function AdminDashCohorts() {
   const [cohortsSearch, setCohortsSearch] = useState([]);
 
   useEffect(() => {
-    fetch(`https://protracker-5hxf.onrender.com/all_cohorts`, {
+    fetch(`http://localhost:3000/all_cohorts`, {
       headers: {
         "Content-Type": "application/json",
         Authorization: "Bearer " + token,

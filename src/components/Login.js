@@ -33,7 +33,7 @@ function Login() {
     };
 
     setIsLoading(true);
-    fetch("https://protracker-5hxf.onrender.com/login", {
+    fetch("http://localhost:3000/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(obj),

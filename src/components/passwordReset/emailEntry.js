@@ -29,7 +29,7 @@ function EmailEntry() {
     let emailBody = {
       email: email,
     };
-    fetch(`https://protracker-5hxf.onrender.com/password_reset/new`, {
+    fetch(`http://localhost:3000/password_reset/new`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

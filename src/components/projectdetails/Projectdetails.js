@@ -69,7 +69,7 @@ function Projectdetails() {
 
   useEffect(() => {
     fetch(
-      `https://protracker-5hxf.onrender.com//projects/${storedProjectId}/project_details`,
+      `http://localhost:3000//projects/${storedProjectId}/project_details`,
       {
         headers: {
           "Content-Type": "application/json",
@@ -197,7 +197,7 @@ function Projectdetails() {
 
   useEffect(() => {
     fetch(
-      `https://protracker-5hxf.onrender.com/cohort/${cohort_id}/cohort_members`,
+      `http://localhost:3000/cohort/${cohort_id}/cohort_members`,
       {
         headers: {
           "Content-Type": "application/json",
@@ -217,7 +217,7 @@ function Projectdetails() {
     const memberObj = { id, project_id: storedProjectId };
 
     fetch(
-      `https://protracker-5hxf.onrender.com/cohort/${cohort_id}/project/add_member`,
+      `http://localhost:3000/cohort/${cohort_id}/project/add_member`,
       {
         method: "POST",
         headers: {
@@ -315,7 +315,7 @@ function Projectdetails() {
       github_link: updatedgithubLink || projectData.github_link,
       category: updatedcategory || projectData.category,
     };
-    fetch(`https://protracker-5hxf.onrender.com/projects/${projectData.id}`, {
+    fetch(`http://localhost:3000/projects/${projectData.id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

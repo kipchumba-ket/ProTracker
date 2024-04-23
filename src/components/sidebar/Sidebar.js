@@ -11,7 +11,7 @@ function Sidebar() {
   const token = localStorage.getItem("jwt"); //store token in localStorage
 
   let handleSignOut = () => {
-    fetch("https://protracker-5hxf.onrender.com/logout", {
+    fetch("http://localhost:3000/logout", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

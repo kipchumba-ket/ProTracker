@@ -7,7 +7,7 @@ function Activities() {
   const [activitiesSearch, setActivitiesSearch] = useState([]);
   //
   useEffect(() => {
-    fetch(`https://protracker-5hxf.onrender.com/activities`, {
+    fetch(`http://localhost:3000/activities`, {
       headers: {
         "Content-Type": "application/json",
         Authorization: "Bearer " + token,

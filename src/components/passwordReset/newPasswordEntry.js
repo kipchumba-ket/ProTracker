@@ -35,7 +35,7 @@ function NewPasswordEntry() {
       password: password,
     };
     if (password === passwordConfirmation) {
-      fetch(`https://protracker-5hxf.onrender.com/password_reset/create`, {
+      fetch(`http://localhost:3000/password_reset/create`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
